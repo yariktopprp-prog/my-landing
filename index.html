@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>xsiset · портфолио разработчика</title>
+<meta name="description" content="Проекты и навыки разработчика: VPN-сервис, Telegram-боты, парсеры, автоматизация и собственный язык программирования. Python, Go, Rust, C, C++, JavaScript, React." />
+<meta name="theme-color" content="#07080b" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="xsiset" />
+<meta property="og:title" content="xsiset · портфолио разработчика" />
+<meta property="og:description" content="VPN-сервис, Telegram-боты, парсеры, автоматизация и собственный язык программирования. Python, Go, Rust, C, C++, JavaScript, React." />
+<meta property="og:locale" content="ru_RU" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- После покупки домена: заменить example.com на свой и раскомментировать.
+     Без абсолютного URL Telegram и соцсети превью не покажут.
+<link rel="canonical" href="https://example.com/" />
+<meta property="og:url" content="https://example.com/" />
+<meta property="og:image" content="https://example.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="xsiset: портфолио разработчика" />
+<meta name="twitter:image" content="https://example.com/og-image.png" />
+-->
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0d13'/%3E%3Cpath d='M20 20l24 24M44 20L20 44' stroke='%238b7cff' stroke-width='6' stroke-linecap='round' fill='none'/%3E%3C/svg%3E" />
+
+<script>document.documentElement.className += ' js';setTimeout(function(){if(!document.documentElement.classList.contains('js-ready')){document.documentElement.classList.add('js-safe')}},2500);</script>
+<link rel="stylesheet" href="style.css?v=20261028j" />
+</head>
+<body>
+
+<a class="skip" href="#top" data-i18n="a11y.skip">К содержимому</a>
+
+<!-- ================= HEADER ================= -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <path d="M6.5 6.5l11 11M17.5 6.5l-11 11" />
+        </svg>
+      </span>
+      <span class="brand__text" data-i18n="brand">xsiset</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#projects" data-i18n="nav.projects">Проекты</a>
+      <a href="#skills" data-i18n="nav.skills">Навыки</a>
+      <a href="#certs" data-i18n="nav.certs">Сертификаты</a>
+      <a href="#about" data-i18n="nav.about">Обо мне</a>
+    </nav>
+
+    <div class="hdr__right">
+      <div class="lang" role="group" aria-label="Язык" data-i18n-aria="aria.lang">
+        <button type="button" class="lang__btn is-active" data-lang="ru" aria-pressed="true">RU</button>
+        <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn--sm btn--primary hdr__cta" href="#contact" data-i18n="nav.cta">Связаться</a>
+      <button type="button" class="burger" id="burger" aria-label="Меню" data-i18n-aria="aria.menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top" tabindex="-1">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="hero__grid" aria-hidden="true"></div>
+
+  <div class="wrap hero__in">
+    <div class="hero__left">
+      <p class="badge reveal">
+        <span class="badge__dot" aria-hidden="true"></span>
+        <span data-i18n="hero.badge">Портфолио: проекты, код и навыки</span>
+      </p>
+
+      <h1 class="hero__title reveal" style="--d:60ms">
+        <span data-i18n="hero.t1">Пишу код,</span><br />
+        <span class="grad" data-i18n="hero.t2">который работает</span><br />
+        <span data-i18n="hero.t3">на любом уровне.</span>
+      </h1>
+
+      <p class="hero__text reveal" style="--d:120ms" data-i18n="hero.text">
+        Вёрстка, бэкенд, боты и парсеры. JavaScript, Python, Go, Rust, C++ и собственный язык программирования.
+      </p>
+
+      <div class="hero__actions reveal" style="--d:180ms">
+        <a class="btn btn--primary" href="#projects">
+          <span data-i18n="hero.cta1">Смотреть проекты</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="#skills" data-i18n="hero.cta2">Навыки</a>
+      </div>
+
+      <p class="hero__note reveal" style="--d:240ms" data-i18n="hero.note">
+        От вёрстки до системного программирования. Часть проектов уже в проде, часть в работе.
+      </p>
+    </div>
+
+    <div class="hero__right reveal" style="--d:160ms">
+      <div class="term" role="img" aria-label="Терминал с логом деплоя" data-i18n-aria="aria.term">
+        <div class="term__bar">
+          <span class="term__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="term__name">ssh deploy@prod</span>
+        </div>
+        <div class="term__body">
+          <p><span class="c-p">$</span> ./deploy --prod</p>
+          <p><span class="c-ok">✓</span> build <span class="c-mut">0.82s</span></p>
+          <p><span class="c-ok">✓</span> dns <span class="c-mut">cloudflare · proxy on</span></p>
+          <p><span class="c-ok">✓</span> vpn-node <span class="c-mut">online · 12 ms</span></p>
+          <p><span class="c-ok">✓</span> tg-bot <span class="c-mut">polling</span></p>
+          <p><span class="c-warn">●</span> parser <span class="c-mut">queued · 1 284 records</span></p>
+          <p><span class="c-ok">✓</span> proxy-bot <span class="c-mut">pool 48/50</span></p>
+          <p class="term__line"><span class="c-p">$</span> <span class="c-cursor" aria-hidden="true"></span></p>
+        </div>
+      </div>
+
+      <div class="float-card" aria-hidden="true">
+        <span class="float-card__dot"></span>
+        <span class="float-card__k">uptime</span>
+        <span class="float-card__v">99.9%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="sec" id="projects">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="kicker" data-i18n="proj.kicker">портфолио</p>
+      <h2 data-i18n="proj.title">Проекты, которые уже работают</h2>
+      <p class="lead" data-i18n="proj.text">
+        Не картинки в кейсах, а живые сервисы: с серверами, оплатой, базой данных и поддержкой.
+        Каждый проект начинался с задачи, а не с шаблона.
+      </p>
+    </header>
+
+    <div class="proj-grid">
+
+      <!-- Featured -->
+      <article class="card card--wide reveal">
+        <div class="card__top">
+          <span class="card__tag">/ vpn</span>
+          <span class="status status--live"><i></i><span data-i18n="status.live">в проде</span></span>
+        </div>
+        <h3 data-i18n="p1.name">VPN-сервис</h3>
+        <p data-i18n="p1.desc">
+          Собственная инфраструктура под ключ: серверы, выдача конфигов, подписки, продление и оплата.
+          Без сторонних посредников, всё под контролем.
+        </p>
+        <ul class="tags">
+          <li>Python</li><li>3x-ui</li><li>PostgreSQL</li>
+        </ul>
+      </article>
+
+      <article class="card reveal" style="--d:60ms">
+        <div class="card__top">
+          <span class="card__tag">/ bot</span>
+          <span class="status status--live"><i></i><span data-i18n="status.live">в проде</span></span>
+        </div>
+        <h3 data-i18n="p2.name">Telegram-бот с VPN</h3>
+        <p data-i18n="p2.desc">
+          Подписка оформляется прямо в чате: оплата, автовыдача ключей, продление и напоминания.
+          Полный цикл без менеджера.
+        </p>
+        <ul class="tags"><li>Python</li><li>aiogram</li><li>PostgreSQL</li><li>Redis</li><li>Payments</li></ul>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__top">
+          <span class="card__tag">/ proxy</span>
+          <span class="status status--live"><i></i><span data-i18n="status.live">в проде</span></span>
+        </div>
+        <h3 data-i18n="p3.name">Бот с прокси</h3>
+        <p data-i18n="p3.desc">
+          Покупаю прокси и раздаю доступ: выдача по запросу, лимиты на пользователя и учёт остатка.
+        </p>
+        <ul class="tags"><li>Python</li><li>asyncio</li><li>Redis</li><li>Telegram API</li></ul>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__top">
+          <span class="card__tag">/ parser</span>
+          <span class="status status--live"><i></i><span data-i18n="status.live">в проде</span></span>
+        </div>
+        <h3 data-i18n="p4.name">Парсер Яндекс.Карт</h3>
+        <p data-i18n="p4.desc">
+          Ищет бизнесы с определённой оценкой и собирает те, у которых есть Telegram для связи.
+          Выгружает контакты в CSV/Excel.
+        </p>
+        <ul class="tags"><li>Python</li><li>Playwright</li><li>pandas</li></ul>
+      </article>
+
+      <article class="card reveal" style="--d:60ms">
+        <div class="card__top">
+          <span class="card__tag">/ auto</span>
+          <span class="status status--dev"><i></i><span data-i18n="status.dev">в разработке</span></span>
+        </div>
+        <h3 data-i18n="p5.name">Автоматизация процессов</h3>
+        <p data-i18n="p5.desc">
+          Связываю сервисы в цепочку: собрать данные, обработать, уведомить, записать.
+          Убираю повторяющиеся действия из процессов.
+        </p>
+        <ul class="tags"><li>Python</li><li>API</li><li>Webhooks</li></ul>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__top">
+          <span class="card__tag">/ lang</span>
+          <span class="status status--dev"><i></i><span data-i18n="status.dev">в разработке</span></span>
+        </div>
+        <h3 data-i18n="p6.name">Собственный язык программирования</h3>
+        <p data-i18n="p6.desc">
+          Компилятор и рантайм на чистом C: лексер, парсер, AST, семантика и генерация кода.
+        </p>
+        <ul class="tags"><li>C</li></ul>
+      </article>
+
+      <article class="card card--cta reveal" style="--d:60ms">
+        <div>
+          <h3 data-i18n="proj.ctaTitle">Дальше будет больше</h3>
+          <p data-i18n="proj.ctaText">Автоматизация и свой язык ещё в работе. Появятся здесь, как только дойдут до рабочего состояния.</p>
+        </div>
+        <a class="btn btn--primary" href="#about">
+          <span data-i18n="proj.ctaBtn">Обо мне</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="sec sec--alt" id="skills">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="kicker" data-i18n="sk.kicker">навыки</p>
+      <h2 data-i18n="sk.title">Что я умею</h2>
+      <p class="lead" data-i18n="sk.text">
+        Каждый пункт стека уже использовался в проектах выше.
+      </p>
+    </header>
+
+    <div class="serv-grid">
+      <article class="serv reveal">
+        <span class="serv__n">01</span>
+        <h3 data-i18n="k1.t">Фронтенд и React</h3>
+        <p data-i18n="k1.d">HTML, CSS, JavaScript и React: адаптив, анимации, доступность и аккуратная структура.</p>
+      </article>
+      <article class="serv reveal" style="--d:60ms">
+        <span class="serv__n">02</span>
+        <h3 data-i18n="k2.t">Бэкенд и API</h3>
+        <p data-i18n="k2.d">Python, Go, Rust: HTTP-сервисы, базы данных, очереди, платежи и авторизация.</p>
+      </article>
+      <article class="serv reveal" style="--d:120ms">
+        <span class="serv__n">03</span>
+        <h3 data-i18n="k3.t">Telegram-боты</h3>
+        <p data-i18n="k3.d">aiogram и Bot API: подписки, автовыдача доступа, оплата, уведомления и поддержка.</p>
+      </article>
+      <article class="serv reveal">
+        <span class="serv__n">04</span>
+        <h3 data-i18n="k4.t">Парсинг данных</h3>
+        <p data-i18n="k4.d">Playwright и requests: сбор по расписанию, обход лимитов, чистка дублей, выгрузка в CSV/Excel.</p>
+      </article>
+      <article class="serv reveal" style="--d:60ms">
+        <span class="serv__n">05</span>
+        <h3 data-i18n="k5.t">Системное программирование</h3>
+        <p data-i18n="k5.d">C, C++, Rust: работа с памятью, сети, протоколы, компиляторы и рантаймы.</p>
+      </article>
+      <article class="serv reveal" style="--d:120ms">
+        <span class="serv__n">06</span>
+        <h3 data-i18n="k6.t">Инфраструктура</h3>
+        <p data-i18n="k6.d">Linux, Docker, WireGuard, деплой и мониторинг.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATES ================= -->
+<section class="sec" id="certs">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="kicker" data-i18n="cert.kicker">сертификаты</p>
+      <h2 data-i18n="cert.title">14 сертификатов</h2>
+      <p class="lead" data-i18n="cert.text">
+        Python, Go, C, C++, Rust, SQL, JavaScript и веб. Имена и ссылки на сертификатах скрыты.
+      </p>
+    </header>
+
+    <div class="cert-grid" id="certGrid">
+      <figure class="cert-card reveal">
+        <div class="cert-card__img">
+          <img src="certs/cert-01.webp" alt="Сертификат: Введение в язык программирования Go (Golang)" width="1521" height="1075" loading="lazy" decoding="async" draggable="false">
+          <span class="cert-card__shield" aria-hidden="true"></span>
+        </div>
+        <figcaption>
+          <span class="cert-card__name">Введение в язык программирования Go (Golang)</span>
+          <span class="cert-card__meta">18.09.2026</span>
+        </figcaption>
+      </figure>
+      <figure class="cert-card reveal">
+        <div class="cert-card__img">
+          <img src="certs/cert-02.webp" alt="Сертификат: C для начинающих (теория и задачи)" width="1521" height="1075" loading="lazy" decoding="async" draggable="false">
+          <span class="cert-card__shield" aria-hidden="true"></span>
+        </div>
+        <figcaption>
+          <span class="cert-card__name">C для начинающих (теория и задачи)</span>
+          <span class="cert-card__meta">12.09.2026 · 100%</span>
+        </figcaption>
+      </figure>
+      <figure class="cert-card reveal">
+        <div class="cert-card__img">
+          <img src="certs/cert-03.webp" alt="Сертификат: C++ для начинающих" width="1521" height="1075" loading="lazy" decoding="async" draggable="false">
+          <span class="cert-card__shield" aria-hidden="true"></span>
+        </div>
+        <figcaption>
+          <span class="cert-card__name">C++ для начинающих</span>
+          <span class="cert-card__meta">01.08.2026</span>
+        </figcaption>
+      </figure>
+      <figure class="cert-card reveal">
+        <div class="cert-card__img">
+          <img src="certs/cert-04.webp" alt="Сертификат: Python-разработчик" width="1521" height="1075" loading="lazy" decoding="async" draggable="false">
+          <span class="cert-card__shield" aria-hidden="true"></span>
+        </div>
+        <figcaption>
+          <span class="cert-card__name">Python-разработчик</span>
+          <span class="cert-card__meta">28.06.2026 · 100%</span>
+        </figcaption>
+      </figure>
+      <figure class="cert-card reveal">
+        <div class="cert-card__img">
+          <img src="certs/cert-05.webp" alt="Сертификат: Программирование на Golang" width="1521" height="1075" loading="lazy" decoding="async" draggable="false">
+          <span class="cert-card__shield" aria-hidden="true"></span>
+        </div>
+        <figcaption>
+          <span class="cert-card__name">Программирование на Golang</span>
+          <span class="cert-card__meta">11.06.2026 · 100%</span>
+        </figcaption>
+      </figure>
+      <figure class="cert-card reveal">
+        <div class="cert-card__img">
+          <img src="certs/cert-06.webp" alt="Сертификат: Rust: Начальный уровень" width="1521" height="1075" loading="lazy" decoding="async" draggable="false">
+          <span class="cert-card__shield" aria-hidden="true"></span>
+        </div>
+        <figcaption>
+          <span class="cert-card__name">Rust: Начальный уровень</span>
+          <span class="cert-card__meta">30.05.2026 · 100%</span>
+        </figcaption>
+      </figure>
+      <figure class="cert-card reveal">
+        <div class="cert-card__img">
+          <img src="certs/cert-07.webp" alt="Сертификат: Веб-технологии: начальный уровень" width="1521" height="1075" loading="lazy" decoding="async" draggable="false">
+          <span class="cert-card__shield" aria-hidden="true"></span>
+        </div>
+        <figcaption>
+          <span class="cert-card__name">Веб-технологии: начальный уровень</span>
+          <span class="cert-card__meta">27.04.2026 · 96%</span>
+        </figcaption>
+      </figure>
+      <figure class="cert-card reveal">
+        <div class="cert-card__img">
+          <img src="certs/cert-08.webp" alt="Сертификат: Добрый, добрый C/C++ с Сергеем Балакиревым" width="1521" height="1075" loading="lazy" decoding="async" draggable="false">
+          <span class="cert-card__shield" aria-hidden="true"></span>
+        </div>
+        <figcaption>
+          <span class="cert-card__name">Добрый, добрый C/C++ с Сергеем Балакиревым</span>
+          <span class="cert-card__meta">24.04.2026 · 100%</span>
+        </figcaption>
+      </figure>
+      <figure class="cert-card reveal">
+        <div class="cert-card__img">
+          <img src="certs/cert-09.webp" alt="Сертификат: Добрый, добрый Python с Сергеем Балакиревым" width="1521" height="1075" loading="lazy" decoding="async" draggable="false">
+          <span class="cert-card__shield" aria-hidden="true"></span>
+        </div>
+        <figcaption>
+          <span class="cert-card__name">Добрый, добрый Python с Сергеем Балакиревым</span>
+          <span class="cert-card__meta">23.04.2026 · 100%</span>
+        </figcaption>
+      </figure>
+      <figure class="cert-card reveal">
+        <div class="cert-card__img">
+          <img src="certs/cert-10.webp" alt="Сертификат: Быстрый старт в FastAPI Python" width="1521" height="1075" loading="lazy" decoding="async" draggable="false">
+          <span class="cert-card__shield" aria-hidden="true"></span>
+        </div>
+        <figcaption>
+          <span class="cert-card__name">Быстрый старт в FastAPI Python</span>
+          <span class="cert-card__meta">14.04.2026 · 100%</span>
+        </figcaption>
+      </figure>
+      <figure class="cert-card reveal">
+        <div class="cert-card__img">
+          <img src="certs/cert-11.webp" alt="Сертификат: «Поколение Python»: курс для продвинутых" width="1521" height="1075" loading="lazy" decoding="async" draggable="false">
+          <span class="cert-card__shield" aria-hidden="true"></span>
+        </div>
+        <figcaption>
+          <span class="cert-card__name">«Поколение Python»: курс для продвинутых</span>
+          <span class="cert-card__meta">25.02.2026 · 100%</span>
+        </figcaption>
+      </figure>
+      <figure class="cert-card reveal">
+        <div class="cert-card__img">
+          <img src="certs/cert-12.webp" alt="Сертификат: Введение в SQL" width="1521" height="1075" loading="lazy" decoding="async" draggable="false">
+          <span class="cert-card__shield" aria-hidden="true"></span>
+        </div>
+        <figcaption>
+          <span class="cert-card__name">Введение в SQL</span>
+          <span class="cert-card__meta">22.02.2026 · 100%</span>
+        </figcaption>
+      </figure>
+      <figure class="cert-card reveal">
+        <div class="cert-card__img">
+          <img src="certs/cert-13.webp" alt="Сертификат: «Поколение Python»: курс для начинающих" width="1521" height="1075" loading="lazy" decoding="async" draggable="false">
+          <span class="cert-card__shield" aria-hidden="true"></span>
+        </div>
+        <figcaption>
+          <span class="cert-card__name">«Поколение Python»: курс для начинающих</span>
+          <span class="cert-card__meta">09.05.2025 · 100%</span>
+        </figcaption>
+      </figure>
+      <figure class="cert-card reveal">
+        <div class="cert-card__img">
+          <img src="certs/cert-14.webp" alt="Сертификат: Погружение в JavaScript: для начинающих" width="1521" height="1075" loading="lazy" decoding="async" draggable="false">
+          <span class="cert-card__shield" aria-hidden="true"></span>
+        </div>
+        <figcaption>
+          <span class="cert-card__name">Погружение в JavaScript: для начинающих</span>
+          <span class="cert-card__meta">28.02.2025</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="sec sec--alt" id="about">
+  <div class="wrap about">
+    <div class="about__body reveal">
+      <p class="kicker" data-i18n="about.kicker">обо мне</p>
+      <h2 data-i18n="about.title">Копаю до низа: от вёрстки до компиляторов</h2>
+      <p data-i18n="about.text1">
+        Начинал с сайтов, дальше ушёл в бэкенд, ботов и системное программирование. Поэтому в портфолио рядом
+        живут VPN-сервис, парсер карт и собственный язык. Это не разные увлечения, а один навык:
+        выбирать инструмент под задачу, а не под привычку.
+      </p>
+      <p data-i18n="about.text2">
+        Сайты собираю на HTML, CSS, JavaScript и React, вёрстка остаётся чистой и её легко поддерживать.
+        Если проекту нужен бэкенд, пишу на Python, Go или Rust.
+      </p>
+
+      <ul class="about__facts">
+        <li><span data-i18n="about.f1">Полный цикл: от идеи и вёрстки до сервера и поддержки</span></li>
+        <li><span data-i18n="about.f2">От CSS до компилятора.</span></li>
+        <li><span data-i18n="about.f3">Читаю чужой код и англоязычную документацию без словаря</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="cta reveal">
+      <div class="cta__glow" aria-hidden="true"></div>
+      <p class="kicker" data-i18n="cta.kicker">связь</p>
+      <h2 data-i18n="cta.title">Связаться со мной</h2>
+      <p class="cta__text" data-i18n="cta.text">
+        Пишите в Telegram или на почту, расскажу подробнее о любом проекте и отвечу на вопросы.
+      </p>
+
+      <div class="cta__actions">
+        <a class="btn btn--primary btn--lg" href="https://t.me/xsiset" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 18.9 19c-.2 1-.8 1.2-1.6.8l-4.5-3.3-2.2 2.1c-.2.2-.4.4-.9.4l.3-4.5 8.2-7.4c.4-.3-.1-.5-.6-.2L7.5 13.4l-4.4-1.4c-1-.3-1-1 .2-1.4l17.2-6.6c.8-.3 1.5.2 1.4 1.3z"/></svg>
+          <span data-i18n="cta.tg">Написать в Telegram</span>
+        </a>
+        <a class="btn btn--ghost btn--lg cta__mail" id="mailBtn" href="mailto:xsiset@proton.me" data-email="xsiset@proton.me" aria-label="Скопировать адрес почты xsiset@proton.me" data-i18n-aria="aria.mail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+          <span data-i18n="cta.mail">xsiset@proton.me</span>
+        </a>
+      </div>
+
+      <p class="sr-only cta__status" id="mailStatus" role="status" aria-live="polite"></p>
+
+      <p class="cta__links">
+        <a href="https://github.com/yariktopprp-prog" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://leetcode.com/u/Xsbnk/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+          <span>LeetCode</span>
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="ftr">
+  <div class="wrap ftr__in">
+    <span class="ftr__brand">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <path d="M6.5 6.5l11 11M17.5 6.5l-11 11" />
+        </svg>
+      </span>
+      <span data-i18n="brand">xsiset</span>
+    </span>
+    <span class="ftr__copy" data-i18n="ftr.copy">© 2026 · xsiset</span>
+    <a class="ftr__up" href="#top" aria-label="Наверх" data-i18n-aria="aria.up">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+    </a>
+  </div>
+</footer>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр сертификата" data-i18n-aria="aria.dialog" aria-hidden="true">
+  <div class="lightbox__backdrop" aria-hidden="true"></div>
+  <figure class="lightbox__fig">
+    <img id="lbImg" alt="" draggable="false">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button type="button" class="lightbox__close" id="lbClose" aria-label="Закрыть" data-i18n-aria="aria.close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+</div>
+
+<script src="script.js?v=20261028j"></script>
+</body>
+</html>
