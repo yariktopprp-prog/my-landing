@@ -1,10 +1,11 @@
 /* =========================================================
    xsiset: логика страницы
    1) переключение RU / EN
-   2) мобильное меню
-   3) шапка при скролле
-   4) появление блоков
-   5) параллакс лога в герое
+   2) тема: тёмная по умолчанию, светлая по кнопке
+   3) мобильное меню
+   4) шапка при скролле
+   5) появление блоков
+   6) параллакс лога в герое
    ========================================================= */
 
 (function () {
@@ -89,6 +90,7 @@
 
       'a11y.skip': 'К содержимому',
       'aria.lang': 'Язык',
+      'aria.theme': 'Сменить тему',
       'aria.menu': 'Меню',
       'aria.up': 'Наверх',
       'aria.dialog': 'Просмотр сертификата',
@@ -171,6 +173,7 @@
 
       'a11y.skip': 'Skip to content',
       'aria.lang': 'Language',
+      'aria.theme': 'Switch theme',
       'aria.menu': 'Menu',
       'aria.up': 'Back to top',
       'aria.dialog': 'Certificate preview',
@@ -184,8 +187,34 @@
   };
 
   const STORAGE_KEY = 'dw-lang';
+  const THEME_KEY = 'xsiset-theme';
   const root = document.documentElement;
   const nodes = document.querySelectorAll('[data-i18n]');
+
+  /* ---------------------- ТЕМА ---------------------- */
+
+  // тёмная включена по умолчанию, светлая — только по явному выбору.
+  // data-theme ставится ещё в <head>, до первой отрисовки, чтобы не было вспышки.
+  const themeBtn = document.getElementById('themeBtn');
+  const themeMeta = document.querySelector('meta[name="theme-color"]');
+
+  function setTheme(theme, persist) {
+    if (theme === 'light') {
+      root.setAttribute('data-theme', 'light');
+    } else {
+      root.removeAttribute('data-theme');
+    }
+    if (themeMeta) themeMeta.setAttribute('content', theme === 'light' ? '#ffffff' : '#000000');
+    if (persist) {
+      try { localStorage.setItem(THEME_KEY, theme); } catch (e) { /* не критично */ }
+    }
+  }
+
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      setTheme(root.getAttribute('data-theme') === 'light' ? 'dark' : 'light', true);
+    });
+  }
 
   /* ---------------------- ПЕРЕВОД ---------------------- */
 
@@ -565,5 +594,8 @@
   // применяем после инициализации галереи, чтобы подписи сертификатов
   // сразу получили правильный язык
   applyLang(savedLang() === 'en' ? 'en' : 'ru');
+
+  // синхронизируем theme-color с тем, что уже выставил скрипт в <head>
+  setTheme(root.getAttribute('data-theme') === 'light' ? 'light' : 'dark', false);
 
 })();

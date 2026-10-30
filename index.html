@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>xsiset · портфолио разработчика</title>
 <meta name="description" content="Проекты и навыки разработчика: VPN-сервис, Telegram-боты, парсеры, автоматизация и собственный язык программирования. Python, Go, Rust, C, C++, JavaScript, React." />
-<meta name="theme-color" content="#ffffff" />
+<meta name="theme-color" content="#000000" />
 
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="xsiset" />
@@ -31,8 +31,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
 
-<script>document.documentElement.className += ' js';setTimeout(function(){if(!document.documentElement.classList.contains('js-ready')){document.documentElement.classList.add('js-safe')}},2500);</script>
-<link rel="stylesheet" href="style.css?v=20261030b" />
+<script>try{if(localStorage.getItem('xsiset-theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}document.documentElement.className += ' js';setTimeout(function(){if(!document.documentElement.classList.contains('js-ready')){document.documentElement.classList.add('js-safe')}},2500);</script>
+<link rel="stylesheet" href="style.css?v=20261030d" />
 </head>
 <body>
 
@@ -62,6 +62,10 @@
         <button type="button" class="lang__btn is-active" data-lang="ru" aria-pressed="true">RU</button>
         <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
       </div>
+      <button type="button" class="theme-btn" id="themeBtn" aria-label="Сменить тему" data-i18n-aria="aria.theme">
+        <svg class="theme-btn__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.8v2.2M12 19v2.2M2.8 12H5M19 12h2.2M5.5 5.5l1.6 1.6M16.9 16.9l1.6 1.6M18.5 5.5l-1.6 1.6M7.1 16.9l-1.6 1.6"/></svg>
+        <svg class="theme-btn__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.2A8.2 8.2 0 0 1 9.8 4a8.2 8.2 0 1 0 10.2 10.2Z"/></svg>
+      </button>
       <a class="hdr__cta" href="#contact" data-i18n="nav.cta">Связаться</a>
       <button type="button" class="burger" id="burger" aria-label="Меню" data-i18n-aria="aria.menu" aria-expanded="false" aria-controls="nav">
         <span></span><span></span>
@@ -496,6 +500,6 @@
   </button>
 </div>
 
-<script src="script.js?v=20261030b"></script>
+<script src="script.js?v=20261030d"></script>
 </body>
 </html>
