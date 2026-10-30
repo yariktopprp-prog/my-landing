@@ -4,7 +4,7 @@
    2) мобильное меню
    3) шапка при скролле
    4) появление блоков
-   5) подсветка карточек под курсором
+   5) параллакс лога в герое
    ========================================================= */
 
 (function () {
@@ -28,18 +28,14 @@
       'nav.about': 'Обо мне',
       'nav.cta': 'Связаться',
 
-      'hero.badge': 'Портфолио: проекты, код и навыки',
-      'hero.t1': 'Пишу код,',
-      'hero.t2': 'который работает',
-      'hero.t3': 'на любом уровне.',
-      'hero.text': 'Вёрстка, бэкенд, боты и парсеры. JavaScript, Python, Go, Rust, C++ и собственный язык программирования.',
+      'hero.t1': 'Серверы, боты',
+      'hero.t2': 'и компилятор.',
+      'hero.text': 'VPN-сервис, Telegram-боты, парсеры и собственный язык программирования.',
       'hero.cta1': 'Смотреть проекты',
-      'hero.cta2': 'Навыки',
-      'hero.note': 'От вёрстки до системного программирования. Часть проектов уже в проде, часть в работе.',
+      'hero.cta2': 'Написать мне',
 
-      'proj.kicker': 'портфолио',
-      'proj.title': 'Проекты, которые уже работают',
-      'proj.text': 'Не картинки в кейсах, а живые сервисы: с серверами, оплатой, базой данных и поддержкой. Каждый проект начинался с задачи, а не с шаблона.',
+      'proj.title': 'Что уже работает',
+      'proj.text': 'Не концепты в кейсах, а сервисы с серверами, оплатой и поддержкой.',
       'status.live': 'в проде',
       'status.dev': 'в разработке',
 
@@ -59,9 +55,8 @@
       'proj.ctaText': 'Автоматизация и свой язык ещё в работе. Появятся здесь, как только дойдут до рабочего состояния.',
       'proj.ctaBtn': 'Обо мне',
 
-      'sk.kicker': 'навыки',
-      'sk.title': 'Что я умею',
-      'sk.text': 'Каждый пункт стека уже использовался в проектах выше.',
+      'sk.title': 'Чем это сделано',
+      'sk.text': 'Тот же стек, что и в проектах выше.',
       'k1.t': 'Фронтенд и React',
       'k1.d': 'HTML, CSS, JavaScript и React: адаптив, анимации, доступность и аккуратная структура.',
       'k2.t': 'Бэкенд и API',
@@ -75,21 +70,18 @@
       'k6.t': 'Инфраструктура',
       'k6.d': 'Linux, Docker, WireGuard, деплой и мониторинг.',
 
-      'cert.kicker': 'сертификаты',
       'cert.title': '14 сертификатов',
       'cert.text': 'Python, Go, C, C++, Rust, SQL, JavaScript и веб. Имена и ссылки на сертификатах скрыты.',
 
-      'about.kicker': 'обо мне',
-      'about.title': 'Копаю до низа: от вёрстки до компиляторов',
+      'about.title': 'От вёрстки до компиляторов',
       'about.text1': 'Начинал с сайтов, дальше ушёл в бэкенд, ботов и системное программирование. Поэтому в портфолио рядом живут VPN-сервис, парсер карт и собственный язык. Это не разные увлечения, а один навык: выбирать инструмент под задачу, а не под привычку.',
       'about.text2': 'Сайты собираю на HTML, CSS, JavaScript и React, вёрстка остаётся чистой и её легко поддерживать. Если проекту нужен бэкенд, пишу на Python, Go или Rust.',
       'about.f1': 'Полный цикл: от идеи и вёрстки до сервера и поддержки',
       'about.f2': 'От CSS до компилятора.',
       'about.f3': 'Читаю чужой код и англоязычную документацию без словаря',
 
-      'cta.kicker': 'связь',
-      'cta.title': 'Связаться со мной',
-      'cta.text': 'Пишите в Telegram или скопируйте почту одним нажатием: расскажу подробнее о любом проекте и отвечу на вопросы.',
+      'cta.title': 'Напишите мне',
+      'cta.text': 'Расскажу подробнее о любом проекте и отвечу на вопросы.',
       'cta.tg': 'Написать в Telegram',
       'cta.mail': 'xsiset@proton.me',
       'cta.copied': 'Скопировано',
@@ -105,7 +97,7 @@
       'aria.term': 'Терминал с логом деплоя',
       'aria.mail': 'Скопировать адрес почты xsiset@proton.me',
 
-      'ftr.copy': '© 2026 · xsiset'
+      'ftr.copy': '© 2026 xsiset'
     },
 
     en: {
@@ -118,18 +110,14 @@
       'nav.about': 'About',
       'nav.cta': 'Get in touch',
 
-      'hero.badge': 'Portfolio: projects, code and skills',
-      'hero.t1': 'I write code',
-      'hero.t2': 'that actually works',
-      'hero.t3': 'at any level.',
-      'hero.text': 'Frontend, backend, bots and scrapers. JavaScript, Python, Go, Rust, C++ and a programming language of my own.',
+      'hero.t1': 'Servers, bots',
+      'hero.t2': 'and a compiler.',
+      'hero.text': 'A VPN service, Telegram bots, scrapers and a programming language of my own.',
       'hero.cta1': 'See the projects',
-      'hero.cta2': 'Skills',
-      'hero.note': 'From markup to systems programming. Some projects are already live, some are in progress.',
+      'hero.cta2': 'Get in touch',
 
-      'proj.kicker': 'portfolio',
-      'proj.title': 'Projects already running',
-      'proj.text': 'Not mockups in a case study, but live services with servers, payments, a database and support. Every project started with a problem, not a template.',
+      'proj.title': 'What already runs',
+      'proj.text': 'Not case-study mockups, but services with servers, payments and support.',
       'status.live': 'live',
       'status.dev': 'in progress',
 
@@ -149,9 +137,8 @@
       'proj.ctaText': 'Automation and my own language are still in progress. They will show up here once they work.',
       'proj.ctaBtn': 'About me',
 
-      'sk.kicker': 'skills',
-      'sk.title': 'What I work with',
-      'sk.text': 'Every item in the stack has already been used in the projects above.',
+      'sk.title': 'What it is built with',
+      'sk.text': 'The same stack as the projects above.',
       'k1.t': 'Frontend & React',
       'k1.d': 'HTML, CSS, JavaScript and React: responsive layout, motion, accessibility and clean structure.',
       'k2.t': 'Backend & APIs',
@@ -165,21 +152,18 @@
       'k6.t': 'Infrastructure',
       'k6.d': 'Linux, Docker, WireGuard, deployment and monitoring.',
 
-      'cert.kicker': 'certificates',
       'cert.title': '14 certificates',
       'cert.text': 'Python, Go, C, C++, Rust, SQL, JavaScript and web. Names and links on the certificates are hidden.',
 
-      'about.kicker': 'about',
-      'about.title': 'I dig all the way down: from CSS to compilers',
+      'about.title': 'From markup to compilers',
       'about.text1': 'I started with websites, then moved into backend, bots and systems programming. That is why a VPN service, a maps scraper and my own language sit side by side in the portfolio. They are not separate hobbies but one skill: choosing the right tool for the job instead of the familiar one.',
       'about.text2': 'I build sites with HTML, CSS, JavaScript and React, keeping the markup clean and easy to maintain. When a project needs a backend, it is Python, Go or Rust.',
       'about.f1': 'Full cycle: from idea and markup to server and support',
       'about.f2': 'From CSS to a compiler.',
       'about.f3': 'I read other people’s code and English docs without a dictionary',
 
-      'cta.kicker': 'contact',
-      'cta.title': 'Get in touch',
-      'cta.text': 'Message me on Telegram or copy the email with one click: I will tell you more about any project and answer questions.',
+      'cta.title': 'Write to me',
+      'cta.text': 'I will tell you more about any project and answer your questions.',
       'cta.tg': 'Message me on Telegram',
       'cta.mail': 'xsiset@proton.me',
       'cta.copied': 'Copied',
@@ -195,7 +179,7 @@
       'aria.term': 'Terminal with the deployment log',
       'aria.mail': 'Copy email address xsiset@proton.me',
 
-      'ftr.copy': '© 2026 · xsiset'
+      'ftr.copy': '© 2026 xsiset'
     }
   };
 
@@ -366,15 +350,36 @@
     }, 2000);
   }
 
-  /* ---------------------- ПОДСВЕТКА КАРТОЧЕК ---------------------- */
+  /* ---------------------- ПАРАЛЛАКС ГЕРОЯ ---------------------- */
 
-  document.querySelectorAll('.card').forEach(function (card) {
-    card.addEventListener('pointermove', function (e) {
-      const r = card.getBoundingClientRect();
-      card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
-      card.style.setProperty('--my', (e.clientY - r.top) + 'px');
-    });
-  });
+  // непрерывное движение, привязанное к скроллу: лог уезжает медленнее страницы.
+  // Значение догоняется через lerp в rAF, поэтому движение плавное и прерываемое.
+  const heroVisual = document.querySelector('.hero__visual');
+
+  if (heroVisual && !reduceMotion) {
+    let target = 0;
+    let current = 0;
+    let frame = null;
+
+    function followScroll() {
+      target = Math.min(window.scrollY, 900);
+      current += (target - current) * 0.09;
+      heroVisual.style.transform = 'translate3d(0,' + (current * 0.055).toFixed(2) + 'px,0)';
+
+      if (Math.abs(target - current) > 0.1) {
+        frame = requestAnimationFrame(followScroll);
+      } else {
+        frame = null;
+      }
+    }
+
+    function requestFrame() {
+      if (!frame) frame = requestAnimationFrame(followScroll);
+    }
+
+    window.addEventListener('scroll', requestFrame, { passive: true });
+    requestFrame();
+  }
 
   /* ---------------------- СЕРТИФИКАТЫ И ЛАЙТБОКС ---------------------- */
 
@@ -399,7 +404,7 @@
 
     lbImg.src = img.currentSrc || img.src;
     lbImg.alt = img.alt;
-    lbCap.textContent = title.textContent + (meta ? ' · ' + meta.textContent : '');
+    lbCap.textContent = title.textContent + (meta ? ', ' + meta.textContent : '');
 
     lightbox.classList.add('is-open');
     lightbox.setAttribute('aria-hidden', 'false');
