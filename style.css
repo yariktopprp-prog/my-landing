@@ -9,10 +9,10 @@
   color-scheme: dark;
 
   --bg:             #000000;
-  --surface:        #1c1c1e;   /* чередующиеся секции: elevated +1 */
-  --card:           #2c2c2e;   /* карточки: elevated +2 */
-  --chip:           #3a3a3c;
-  --chip-ink:       #c7c7cc;
+  --surface:        #2c2c2e;   /* чередующиеся секции: заметно серые */
+  --card:           #333335;   /* карточки: на ступень светлее секций */
+  --chip:           #414144;
+  --chip-ink:       #d1d1d6;
   --ink:            #f5f5f7;
   --muted:          #a1a1a6;
   --muted-2:        #86868b;
@@ -73,7 +73,7 @@ html[data-theme="light"]{
   --hover:          rgba(0,0,0,.05);
   --shadow:         0 2px 12px rgba(0,0,0,.04);
   --shadow-hover:   0 18px 40px rgba(0,0,0,.09);
-  --footer-bg:      #f5f5f7;
+  --footer-bg:      #ffffff;
   --term-bg:        #1d1d1f;
   --term-line:      rgba(255,255,255,.12);
 
@@ -82,7 +82,7 @@ html[data-theme="light"]{
   --focus:          #0071e3;
   --green:          #34c759;
 
-  --band-fade:      0px;
+  --band-fade:      140px;
 }
 
 *,*::before,*::after{ box-sizing:border-box; }
@@ -91,6 +91,7 @@ html{
   scroll-behavior:smooth;
   scroll-padding-top:72px;
   -webkit-text-size-adjust:100%;
+  background:var(--bg);
 }
 
 body{
@@ -264,12 +265,19 @@ button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; 
 .lang{
   display:inline-flex;
   align-items:center;
-  gap:3px;
+  gap:2px;
+  padding:3px 5px;
+  border-radius:980px;
+  background:var(--bg);   /* плотная подложка: стекло шапки не ломает контраст */
   font-size:11px;
 }
 .lang__btn{
-  padding:2px 3px;
-  color:var(--muted-2);
+  display:grid;
+  place-items:center;
+  min-width:26px;
+  height:24px;
+  padding:0 5px;
+  color:var(--muted);
   transition:color .15s ease;
 }
 .lang__btn:hover{ color:var(--ink); }
@@ -470,6 +478,10 @@ html[data-theme="light"] .theme-btn .theme-btn__sun{ display:none; }
   bottom:0;
   background:linear-gradient(to top, var(--bg), transparent);
 }
+
+/* контактный блок в светлой теме остаётся чётким тёмным прямоугольником */
+html[data-theme="light"] .sec--dark::before,
+html[data-theme="light"] .sec--dark::after{ display:none; }
 
 .sec__head{
   max-width:720px;
@@ -789,6 +801,8 @@ html[data-theme="light"] .theme-btn .theme-btn__sun{ display:none; }
   border-top:1px solid var(--rule);
   transition:background-color .4s ease;
 }
+/* в светлой теме подвал белый и стыкуется с тёмным контактом: линейка не нужна */
+html[data-theme="light"] .ftr{ border-top-color:transparent; }
 .ftr__in{
   display:flex;
   align-items:center;
@@ -954,7 +968,7 @@ html.js-safe .reveal{ opacity:1 !important; transform:none !important; }
   .hdr__cta{ display:none; }
   .hdr__right{ margin-left:auto; gap:12px; }
   .theme-btn{ width:38px; height:38px; }   /* цель под палец, а не 30px */
-  .lang__btn{ padding:11px 5px; }
+  .lang__btn{ height:36px; min-width:34px; }
   .brand__text{ font-size:15px; }
 
   .hero{ padding-top:56px; }
