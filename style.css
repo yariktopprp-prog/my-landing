@@ -38,7 +38,7 @@
 
   /* фиксированные цвета: не переворачиваются вместе с темой */
   --white:          #ffffff;
-  --contact-bg:     #1c1c1e;
+  --contact-bg:     #000000;
   --contact-ink:    #f5f5f7;
 
   /* мягкий переход между чёрным фоном и серыми секциями */
@@ -76,6 +76,9 @@ html[data-theme="light"]{
   --footer-bg:      #ffffff;
   --term-bg:        #1d1d1f;
   --term-line:      rgba(255,255,255,.12);
+
+  --contact-bg:     #ffffff;
+  --contact-ink:    #1d1d1f;
 
   --blue-text:      #0066cc;
   --blue-text-hover:#0077ed;
@@ -456,9 +459,7 @@ html[data-theme="light"] .theme-btn .theme-btn__sun{ display:none; }
 /* мягкая растушёвка на стыке чёрного фона и серых секций:
    плавный градиент в 140px вместо резкой линии */
 .sec--gray::before,
-.sec--gray::after,
-.sec--dark::before,
-.sec--dark::after{
+.sec--gray::after{
   content:"";
   position:absolute;
   left:0; right:0;
@@ -466,20 +467,14 @@ html[data-theme="light"] .theme-btn .theme-btn__sun{ display:none; }
   z-index:-1;
   pointer-events:none;
 }
-.sec--gray::before,
-.sec--dark::before{
+.sec--gray::before{
   top:0;
   background:linear-gradient(to bottom, var(--bg), transparent);
 }
-.sec--gray::after,
-.sec--dark::after{
+.sec--gray::after{
   bottom:0;
   background:linear-gradient(to top, var(--bg), transparent);
 }
-
-/* контактный блок в светлой теме остаётся чётким тёмным прямоугольником */
-html[data-theme="light"] .sec--dark::before,
-html[data-theme="light"] .sec--dark::after{ display:none; }
 
 .sec__head{
   max-width:720px;
@@ -790,6 +785,21 @@ html[data-theme="light"] .sec--dark::after{ display:none; }
   clip:auto;
   white-space:normal;
 }
+
+/* в светлой теме контакт — часть белой страницы, без длинной тёмной плашки */
+html[data-theme="light"] .cta__text{ color:var(--muted); }
+html[data-theme="light"] .cta__links{ border-top-color:var(--rule); }
+html[data-theme="light"] .cta__links a{ color:var(--muted); }
+html[data-theme="light"] .cta__links a:hover{ color:var(--ink); }
+html[data-theme="light"] .cta__mail{ color:var(--blue-text); }
+html[data-theme="light"] .cta__mail:hover{ color:var(--blue-text-hover); }
+html[data-theme="light"] .cta__status{ color:var(--blue-text); }
+html[data-theme="light"] .sec--dark .btn--light{
+  background:var(--blue);
+  color:var(--white);
+}
+html[data-theme="light"] .sec--dark .btn--light:hover{ background:var(--blue-hover); }
+html[data-theme="light"] .sec--dark .btn--light:active{ background:#0069d2; }
 
 /* ------------------------- футер ------------------------- */
 
